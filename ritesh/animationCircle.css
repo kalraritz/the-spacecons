@@ -1,0 +1,38 @@
+.red{
+   width: 70px;
+   height: 70px;
+   background: red; 
+   -moz-border-radius: 70px; 
+   -webkit-border-radius: 70px; 
+   border-radius: 70px;
+   float:left;
+}
+
+#outerCircle{
+   float:left;
+   left:50%;
+   top:50%;
+   margin-left:-42px;
+   margin-top:-42px;
+   position:relative;
+   width: 80px;
+   height: 80px;
+   background: #005FE6; 
+   -moz-border-radius: 80px; 
+   -webkit-border-radius: 80px; 
+   border-radius: 80px;
+   border: 2px solid #00BBE6;
+    z-index: 50;
+}
+
+.resultCircle{
+   width:30px;
+   height: 30px;
+   background: #ffffff; 
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+   float:left;
+   position:absolute;
+   opacity:0;
+}

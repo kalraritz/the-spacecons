@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Animations</title>
+        <!-- greensock pack -->
+        <script type="text/javascript" src="libs/greensock-v12-js/src/uncompressed/TimelineLite.js"></script>
+        <script type="text/javascript" src="libs/greensock-v12-js/src/uncompressed/easing/EasePack.js"></script>
+        <script type="text/javascript" src="libs/greensock-v12-js/src/uncompressed/TimelineMax.js"></script>
+        <script type="text/javascript" src="libs/greensock-v12-js/src/uncompressed/TweenMax.js"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="libs/jquery-1.9.1.js"></script>
+        <!-- JQuery UI -->
+        <script type="text/javascript" src="libs/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>
+	</head>
+
+    <body>
+
+	<style>
+	.ispace{
+	   width: 100%;
+	   height: 300px;
+	   clear:both;
+	}
+	.timeline{
+	   width: 100%;
+	   height: 100%;
+	   float:left;
+	}
+	.A{
+	   height: 30px;
+	   background: green; 
+	   float:left;
+	}
+	.B{
+	   height: 30px;
+	   background: yellow; 
+	   float:left;
+	}
+	.C{
+	   height: 30px;
+	   background: red; 
+	   float:left;
+	}
+	.D{
+	   height: 30px;
+	   background: orange; 
+	   float:left;
+	}
+	</style>
+  
+	<div class="ispace">
+	</div>
+	<div class="timeline">
+		<div class="A" id="block1">
+		</div>
+		<script>
+			$('#block1').mouseover
+			(
+				function() 
+				{
+					$('#block1').animate
+					(
+						{
+							height: "400px",
+							width: "100%",
+							opacity: 0.5
+						}
+						, 1500
+					);
+					$('#block2').animate
+					(
+						{
+							width: "0px",
+							opacity: 0.5
+						}
+						, 1500
+					);
+					$('#block3').animate
+					(
+						{
+							width: "0px",
+							opacity: 0.5
+						}
+						, 1500
+					);
+					$('#block4').animate
+					(
+						{
+							width: "0px",
+							opacity: 0.5
+						}
+						, 1500
+					);
+				}
+			);
+			$('#block1').mouseout
+			(
+				function() 
+				{
+					var domLoaded = $(function()
+						{
+							$("#block1").animate
+							(
+								{
+								width: "10%",
+								height: "30px",
+								opacity: 1
+								}
+								, 1500 
+							);
+							$("#block2").animate
+							(
+								{
+								width: "50%",
+								height: "30px",
+								opacity: 1
+								}
+								, 1500 
+							);
+							$("#block3").animate
+							(
+								{
+								width: "20%",
+								height: "30px",
+								opacity: 1
+								}
+								, 1500 
+							);
+							$("#block4").animate
+							(
+								{
+								width: "20%",
+								height: "30px",
+								opacity: 1
+								}
+								, 1500 
+							);
+						}
+					);
+				}
+			);
+		</script>
+		<div class="B" id="block2"></div>
+		<div class="C" id="block3"></div>
+		<div class="D" id="block4"></div>
+	</div>
+	<script>
+	/* Using multiple unit types within one animation. */
+	var domLoaded = $(function()
+		{
+			$("#block1").animate
+			(
+				{
+				width: "10%",
+				opacity: 1
+				}
+				, 1500 
+			);
+			$("#block2").animate
+			(
+				{
+				width: "50%",
+				opacity: 1
+				}
+				, 1500 
+			);
+			$("#block3").animate
+			(
+				{
+				width: "20%",
+				opacity: 1
+				}
+					, 1500 
+			);
+			$("#block4").animate
+			(
+				{
+				width: "20%",
+				opacity: 1
+				}
+					, 1500 
+			);
+		}
+	);
+	</script>
+
+
+	</body>
+</html>
