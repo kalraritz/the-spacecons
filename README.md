@@ -1,4 +1,1 @@
-the-spacecons
-=============
-
-the-spacecons repo
+Singapore Space Apps Challenge
